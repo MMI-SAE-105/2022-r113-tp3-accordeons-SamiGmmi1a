@@ -9,6 +9,17 @@
 
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-    <div class="accordeon" x-data="{isOpen:1}"></div>
+    <div class="accordeon" x-data="{isOpen:1}">
+      <section>
+        <button>bouton 1</button>
+        <p x-show="isOpen === 1">impedit</p>
+      </section>
+
+      <section>
+        <button  @click="inOpen = 2">bouton 2</button>
+        <p x-show="isOpen === 2 ">...</p>
+      </section>
+
+    </div>
   </body>
 </html>
