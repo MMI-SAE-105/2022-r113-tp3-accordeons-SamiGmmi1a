@@ -7,13 +7,39 @@
     <title>Accordéon avec des booléens</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
+
   <body>
     <h1>Accordéon avec des booléens</h1>
-    <div class="accordeon"></div>
-    <section x-data="{
-      isOpen : true,
-    }">
-    <button @click="isOpen = ! isOpen"></button>
-  </section>
-  </body>
+
+
+  <div class="accordeon">
+    <section>
+      <div x-data="{ open: false }">
+        <button @click="open = ! open">bouton 1</button>
+        <span x-show="open" x-transition>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, quos saepe dolorem accusamus in reprehenderit eius veniam nulla optio asperiores nemo molestias voluptas aut recusandae possimus minima accusantium! Ex?</p>
+        </span>
+    </section>
+  </div>
+
+  <div class="accordeon">
+    <section>
+      <div x-data="{ open: false }">
+        <button @click="open = ! open">bouton 2</button>
+        <span x-show="open" x-transition>
+          <p>Facere recusandae nulla neque perferendis eum excepturi itaque eligendi natus iusto, eos, quae, quasi illum magnam quidem ab non beatae blanditiis voluptatum distinctio doloribus. Tempore quas exercitationem blanditiis! Iusto, atque.</p>
+        </span>
+    </section>
+  </div>
+
+  <div class="accordeon">
+    <section>
+      <div x-data="{ open: false }">
+        <button @click="open = ! open">bouton 3</button>
+        <span x-show="open" x-transition>
+          <p>Ipsa, est labore. Sunt rerum ab perferendis aspernatur perspiciatis sapiente, voluptate quidem! Tempore nemo eaque quod quibusdam obcaecati? Illum culpa possimus dignissimos nesciunt provident autem voluptate voluptas alias iure harum.</p>
+        </span>
+    </section>
+  </div>
+</body>
 </html>
