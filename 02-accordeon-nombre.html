@@ -12,25 +12,28 @@
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
 
 
-    <div x-data="{ open: false }">
-      <button @click="open = ! open">bouton</button>
-      <span x-show="open" x-transition>
-          Hello 👋
-      </span>
-  </div>
+    <div x-data="{ open: 1 }">
 
-    <div class="accordeon" x-data="{isOpen:1}">
       <section>
-        <button>bouton 1</button>
-        <p x-show="isOpen === 1">impedit</p>
+        <button @click="open = 1">bouton</button>
+        <span x-show="open == 1" x-transition>
+            Hello 👋
+        </span>
       </section>
 
       <section>
-        <button  @click="inOpen = 2">bouton 2</button>
-        <p x-show="isOpen === 2 ">...</p>
+        <button @click="open = 2">bouton</button>
+        <span x-show="open == 2" x-transition>
+            Hello 👋
+        </span>
       </section>
 
-
+      <section> 
+        <button @click="open = 3">bouton</button>
+        <span x-show="open == 3" x-transition>
+            Hello 👋
+        </span>
+    </section>
     </div>
   </body>
 </html>
