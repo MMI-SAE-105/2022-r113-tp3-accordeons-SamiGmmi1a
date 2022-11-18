@@ -7,9 +7,17 @@
     <title>Accordéon avec x-collapse</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
+
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
 
+    <div x-data="{ expanded: false }">
+      <button @click="expanded = ! expanded">bouton 1</button>
+   
+      <p x-show="expanded" x-collapse>
+          ...
+      </p>
+  </div>
     <script></script>
   </body>
 </html>
