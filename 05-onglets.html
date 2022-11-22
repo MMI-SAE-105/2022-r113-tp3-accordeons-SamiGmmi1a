@@ -9,5 +9,47 @@
     <label for="q">Text à chercher :</label>
     <input type="text" id="q" name="q" x-model="q">
     <button type="submit">Rechercher</button>
-</form
+</form>
+
+<title>onglet</title>
+  <script></script>
+
+  <style>
+    #onglets ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      gap: 1em;
+    }
+
+    #onglets li {
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #eee;
+      cursor: pointer;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    #onglet li.actif {
+      background-color: #fff;
+    }
+    [role=tabpanel].actif {
+      opacity: 1;
+    }
+  </style>
+
+  <head>
+    <body>
+      <h1>onglet</h1>
+    <div id="ongelts" x-data="{
+      ouvert : 1,
+    }">
+    <ul>
+      <li ></li>
+    </ul>
+  </div>
+    </body>
+  </head>
 
