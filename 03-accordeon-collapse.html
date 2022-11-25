@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec x-collapse</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   </head>
 
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
 
-    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
 
-    
     <div x-data="{ expanded: false }">
       <button @click="expanded = ! expanded">bouton 1</button>
    
       <p x-show="expanded" x-collapse>
           hello
       </p>
+
   </div>
     <script></script>
   </body>
