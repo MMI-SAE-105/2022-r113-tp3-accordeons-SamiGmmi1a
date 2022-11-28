@@ -11,7 +11,7 @@
     <button type="submit">Rechercher</button>
 </form>
 
-<title>onglet</title>
+<title>onglets</title>
   <script></script>
 
   <style>
@@ -32,7 +32,7 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
-    #onglet li.actif {
+    #onglets li.actif {
       background-color: #fff;
     }
     [role=tabpanel].actif {
@@ -42,22 +42,28 @@
 
   <header>
     <body>
-      <h1>onglet</h1>
+      <h1>onglets</h1>
 
-    <div id="ongelts" x-data="{
-      isOpen: 1,
-    }"
-    >
-     <div id="premier">texte 1</div>
-     <div id="second">texte 2</div>
-     <div id="troisieme">texte 3</div>
-  </div>
+    <div class="container">
 
-  <button @click="isOpen = 1">bouton 1</button>
-  <button @click="isOpen = 2">bouton 2</button>
-  <button @click="isOepn = 3">bouton 3</button>
+      <div class="contenu activecontenu" data-anim="1"></div>
+        <h3>Samian ipsum dolor sit amet. 1</h3>
+        <hr>
+        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
+    </div>
 
-  <onglet @x-bind:class="{ 'hidden': foo }"
+    <div class="contenu activecontenu" data-anim="2"></div>
+        <h3>Samian ipsum dolor sit amet. 2</h3>
+        <hr>
+        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
+    </div>
+
+    <div class="contenu activecontenu" data-anim="3"></div>
+        <h3>Samian ipsum dolor sit amet. 3</h3>
+        <hr>
+        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
+    </div>
+  
 
     </body>
   </header>
