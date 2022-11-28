@@ -40,16 +40,25 @@
     }
   </style>
 
-  <head>
+  <header>
     <body>
       <h1>onglet</h1>
+
     <div id="ongelts" x-data="{
-      ouvert : 1,
-    }">
-    <ul>
-      <li ></li>
-    </ul>
+      isOpen: 1,
+    }"
+    >
+     <div id="premier">texte 1</div>
+     <div id="second">texte 2</div>
+     <div id="troisieme">texte 3</div>
   </div>
+
+  <button @click="isOpen = 1">bouton 1</button>
+  <button @click="isOpen = 2">bouton 2</button>
+  <button @click="isOepn = 3">bouton 3</button>
+
+  <onglet @x-bind:class="{ 'hidden': foo }"
+
     </body>
-  </head>
+  </header>
 
