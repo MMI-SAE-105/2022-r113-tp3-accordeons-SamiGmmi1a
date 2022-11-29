@@ -12,7 +12,6 @@ onglets.forEach(onglet  => {
             return;
         } else {
             onglets.classList.add('active');
-        }
 
         index = onglets.getAttribute('data-anim');
         console.log(index);

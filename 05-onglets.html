@@ -15,7 +15,11 @@
   <script></script>
 
   <style>
-    #onglets ul {
+    .parent {
+      position: relative;
+      size: 0cm;
+    }
+        #onglets ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
@@ -23,7 +27,7 @@
       gap: 1em;
     }
 
-    #onglets li {
+    .onglets li {
       padding: 0.5em;
       border: 1px solid #ccc;
       border-bottom: none;
@@ -32,7 +36,7 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
-    #onglets li.actif {
+    .onglets li.actif {
       background-color: #fff;
     }
     [role=tabpanel].actif {
@@ -42,29 +46,34 @@
 
   <header>
     <body>
-      <h1>onglets</h1>
+   
+      <ul role="tablist">
+        <li role="tab">Onglet 1</li>
+        <div>
+          <div role="tabpanel" x-show="ouvert === 1" :class="{actifli:isOpen === 1,}"
+          >
+            <h1>Panneau 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi exercitationem eos vero architecto iusto dolorum fugiat magni dolore maiores, temporibus, aliquid quisquam atque, perferendis illum! Autem iure a molestiae saepe.</p>
+          </div>
 
-    <div class="container">
+        <li role="tab">Onglet 2</li>
+        <div role="tabpanel" x-show="ouvert === 2" :class="{actifli:isOpen === 2,}"
+        >
+          <h1>Panneau 2</h1>
+          <p>Blanditiis molestiae reprehenderit in debitis est quidem laborum repellendus itaque a aliquid velit, optio nam voluptates architecto animi voluptatem accusamus dolores exercitationem aut! Quas non eligendi nostrum ad aspernatur. Animi.</p>
+        </div>
 
-      <div class="contenu activecontenu" data-anim="1"></div>
-        <h3>Samian ipsum dolor sit amet. 1</h3>
-        <hr>
-        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
-    </div>
+        <li role="tab">Onglet 3</li>
+        <div role="tabpanel" x-show="ouvert === 3" :class="{actifli:isOpen === 3,}"
+        >
+          <h1>Panneau 3</h1>
+          <p>Impedit necessitatibus totam ullam quod officiis tempore veritatis esse, nobis corrupti quis consequatur eligendi vel beatae dolores obcaecati, similique consectetur deleniti! Quos voluptatum excepturi necessitatibus. Expedita odio architecto minus qui?</p>
+        </div>
+      </div>
+      </ul>
 
-    <div class="contenu activecontenu" data-anim="2"></div>
-        <h3>Samian ipsum dolor sit amet. 2</h3>
-        <hr>
-        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
-    </div>
 
-    <div class="contenu activecontenu" data-anim="3"></div>
-        <h3>Samian ipsum dolor sit amet. 3</h3>
-        <hr>
-        <p>Samian ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur reprehenderit molestias soluta maiores vitae mollitia eius, impedit animi facilis consequuntur aliquam accusamus sint iusto.</p>
-    </div>
   
-
     </body>
   </header>
 

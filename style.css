@@ -54,6 +54,12 @@
    opacity: 0;
 }
 
+.contenu h1 {
+   position: absolute;
+   height: 70%;
+   width: 100%;
+}
+
 .contenu h3 {
    padding: 20px;
 }
