@@ -1,10 +1,10 @@
 #accordeon {
     /* pour que les éléments soient alignés horizontalement */
-    align-items: center;
+    display: flex;
     /* pour éviter les marges par défaut */
-    margin: 0%;
+    margin: none;
     /* pour éviter les "padding" par défaut */
-    padding: 20px%;
+    padding: 20px;
 }
 
 #accordeon li {
@@ -35,5 +35,17 @@
     /* pour éviter les marges par défaut */
     margin: none;
     /* pour que les éléments soient alignés horizontalement */
-    
+
     /* largeur de l'élément intrérieur de 317px (= déplié) */
+}
+
+
+#accordeon li figure figcaption {
+    /* largeur du texte de 200px */
+    font-weight: 200px;
+    /* pour espacer le texte, padding de 10px */
+    
+    /* pour que les éléments soient alignés verticalement */
+   
+    /* espace entre les éléments */
+}
