@@ -1,0 +1,29 @@
+#accordeon {
+    /* pour que les éléments soient alignés horizontalement */
+    align-items: center;
+    /* pour éviter les marges par défaut */
+    margin: 0%;
+    /* pour éviter les "padding" par défaut */
+    padding: 20px%;
+}
+
+#accordeon li {
+    /* largeur de chaque élément replié 107px */
+    width: 170px;
+    /* pour cacher le contenu dépassant de l'élément */
+    
+    /* pour l'animation, transition sur width */
+
+    /* couleur de fond #eee */
+    background-color: #eee;
+    /* pour enlever les puces */
+    list-style: none;
+    /* pour espacer les éléments, marge de 3px */
+    margin: 3px;
+    /* pour espacer le contenu, padding de 5px */
+    padding: 5px;
+    /* pour arrondir les bords de 5px */
+    border-radius: 5px;
+
+}
+
