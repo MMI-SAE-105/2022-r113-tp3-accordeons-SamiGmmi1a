@@ -11,7 +11,7 @@
     /* largeur de chaque élément replié 107px */
     width: 170px;
     /* pour cacher le contenu dépassant de l'élément */
-    
+    overflow: hidden;
     /* pour l'animation, transition sur width */
 
     /* couleur de fond #eee */
@@ -49,4 +49,14 @@
    
     /* espace entre les éléments */
     
+}
+
+#accordeon li figure figcaption {
+    /* largeur du texte de 200px */
+    
+    /* pour espacer le texte, padding de 10px */
+    
+    /* pour que les éléments soient alignés verticalement */
+   
+    /* espace entre les éléments */
 }
