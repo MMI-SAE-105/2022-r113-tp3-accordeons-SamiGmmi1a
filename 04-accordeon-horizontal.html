@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
+    <link rel="stylesheet" href="/accordeon.css">
   </head>
   <body>
-    <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
-      <li class="actif">
+      <li>
+        <figure>
+          <img src="https://picsum.photos/100?random=1" alt="" width="102">
+          <figcaption>
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </figcaption>
+        </figure>
       </li>
       <li>
-        ::marker
-        <figure>flex==$0</figure>
+        <figure>
+          <img src="https://picsum.photos/100?random=2" alt="" width="102">
+          <figcaption>
+            <h3>Deleniti, qui labore?</h3>
+            <p>Officia suscipit saepe qui a fuga!</p>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="https://picsum.photos/100?random=3" alt="" width="102">
+          <figcaption>
+            <h3>Consectetur, reprehenderit repellat!</h3>
+            <p>Iure possimus excepturi adipisci tempora mollitia.</p>
+          </figcaption>
+        </figure>
       </li>
     </ul>
 
-    <li>x-bind:class="{ 'actif': foo }"</li>
   </body>
 </html>
