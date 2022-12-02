@@ -44,8 +44,9 @@
     /* largeur du texte de 200px */
     font-weight: 200px;
     /* pour espacer le texte, padding de 10px */
-    
+    letter-spacing: 10px;
     /* pour que les éléments soient alignés verticalement */
    
     /* espace entre les éléments */
+    
 }
