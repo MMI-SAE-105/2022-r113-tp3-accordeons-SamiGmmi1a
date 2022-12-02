@@ -24,6 +24,16 @@
     padding: 5px;
     /* pour arrondir les bords de 5px */
     border-radius: 5px;
-
 }
 
+#accordeon li.actif {
+    /* largeur de l'élément déplié 317px */
+    
+}
+
+#accordeon li figure {
+    /* pour éviter les marges par défaut */
+    margin: none;
+    /* pour que les éléments soient alignés horizontalement */
+    
+    /* largeur de l'élément intrérieur de 317px (= déplié) */
