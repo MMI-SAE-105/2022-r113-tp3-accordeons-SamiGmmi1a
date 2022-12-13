@@ -7,19 +7,22 @@
     <title>Accordéon avec x-collapse</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script>cola</script>
   </head>
 
   <body>
     <h1>Accordéon avec x-collapse</h1>
 
-
     <div x-data="{ expanded: false }">
-      <button @click="expanded = ! expanded">bouton 1</button>
+      <button @click="expanded = ! expanded">Toggle Content</button>
    
-      <p x-show="expanded" x-collapse.duration.1000ms>
-        
-        Le plugin JavaScript collapse est utilisé pour afficher et masquer le contenu. Les boutons ou les ancres sont utilisés comme déclencheurs mappés à des éléments spécifiques que vous basculez. Réduire un élément animera la height de sa valeur actuelle à 0 . Étant donné la façon dont CSS gère les animations, vous ne pouvez pas utiliser de padding sur un élément .collapse . À la place, utilisez la classe comme élément d'emballage indépendant.
+      <p x-show="expanded" x-collapse>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur dolorem excepturi laboriosam facilis quas inventore odit nemo accusantium! Repudiandae amet illo recusandae ratione fuga, voluptatum voluptas quia reiciendis reprehenderit quisquam.
       </p>
+  </div>
+
+
+
 
   </div>
     <script></script>
